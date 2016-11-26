@@ -1,0 +1,10 @@
+*~
+npm-debug.log
+.DS_Store
+node_modules
+db.json
+/.deploy/**
+*/.deploy/**
+/public/**
+*/public/**
+themes
