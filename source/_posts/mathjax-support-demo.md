@@ -7,7 +7,7 @@ tags:
 
 ### Usage
 
-To enable mathjax, just add `mathjax: true` at **Front-matte** like this:
+To enable mathjax, just add `mathjax: true` in **Front-matte** like this:
 
 ```
 ---
