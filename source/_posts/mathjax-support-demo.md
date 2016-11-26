@@ -5,7 +5,22 @@ mathjax: true
 tags:
 ---
 
-### Source-Code
+### Usage
+
+To enable mathjax, just add `mathjax: true` at **Front-matte** like this:
+
+```
+---
+title: mathjax-support-demo
+date: 2016-11-27 02:38:55
+mathjax: true
+tags:
+---
+```
+
+then you can write mathjax scripts in post
+
+### MathJax-Source-Code
 
 ```
 \begin{align}
