@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>mathjax-support-demo | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="UsageTo enable mathjax, just add mathjax: true in Front-matte like this: 123456---title: mathjax-support-demodate: 2016-11-27 02:38:55mathjax: truetags:--- then you can write mathjax scripts in post M">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mathjax-support-demo">
+<meta property="og:url" content="http://stackbox.cn/mathjax-support-demo/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="UsageTo enable mathjax, just add mathjax: true in Front-matte like this: 123456---title: mathjax-support-demodate: 2016-11-27 02:38:55mathjax: truetags:--- then you can write mathjax scripts in post M">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-11-11T09:19:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="mathjax-support-demo">
+<meta name="twitter:description" content="UsageTo enable mathjax, just add mathjax: true in Front-matte like this: 123456---title: mathjax-support-demodate: 2016-11-27 02:38:55mathjax: truetags:--- then you can write mathjax scripts in post M">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  
+</head>
+<body>
+<div id="container">
+  <div id="wrap">
+    <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" class="search-form">
+          <input type="search" name="word" maxlength="20" class="search-form-input" placeholder="Search">
+          <input type="submit" value="" class="search-form-submit">
+          <input name=tn type=hidden value="bds">
+          <input name=cl type=hidden value="3">
+          <input name=ct type=hidden value="2097152">
+          <input type="hidden" name="si" value="stackbox.cn">
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+    <div class="outer">
+      <section id="main"><article id="post-mathjax-support-demo" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/mathjax-support-demo/" class="article-date">
+  <time datetime="2016-11-26T18:38:55.000Z" itemprop="datePublished">2016-11-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      mathjax-support-demo
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>To enable mathjax, just add <code>mathjax: true</code> in <strong>Front-matte</strong> like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: mathjax-support-demo</span><br><span class="line">date: 2016-11-27 02:38:55</span><br><span class="line">mathjax: true</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>then you can write mathjax scripts in post</p>
+<h3 id="MathJax-Source-Code"><a href="#MathJax-Source-Code" class="headerlink" title="MathJax-Source-Code"></a>MathJax-Source-Code</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;align&#125;</span><br><span class="line">\theta\_0 &amp; := \theta\_0 - \alpha\frac&#123;\partial&#125;&#123;\partial\theta\_0&#125;J(\theta\_0,\theta\_1) \\\\</span><br><span class="line">&amp; = \theta\_0 - \alpha\frac&#123;\partial&#125;&#123;\partial\theta\_0&#125; \frac&#123;1&#125;&#123;2m&#125; \sum\_&#123;i=1&#125;^&#123;m&#125;(h\_\theta(x^&#123;(i)&#125;) - y^&#123;(i)&#125;)^2 \\\\</span><br><span class="line">&amp; = \theta\_0 - (\alpha \frac&#123;1&#125;&#123;2m&#125; \* 2 \* \sum\_&#123;i=1&#125;^&#123;m&#125;(h\_\theta(x^&#123;(i)&#125;) - y^&#123;(i)&#125;)) \* \frac&#123;\partial&#125;&#123;\partial\theta\_0&#125;(h\_\theta(x^&#123;(i)&#125;) - y^&#123;(i)&#125;) \\\\</span><br><span class="line">&amp; = \theta\_0 - \frac&#123;\alpha&#125;&#123;m&#125;  * \sum\_&#123;i=1&#125;^&#123;m&#125;(h\_\theta(x^&#123;(i)&#125;) - y^&#123;(i)&#125;)</span><br><span class="line">\end&#123;align&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Render-Result"><a href="#Render-Result" class="headerlink" title="Render-Result"></a>Render-Result</h3><p>\begin{align}<br>\theta_0 &amp; := \theta_0 - \alpha\frac{\partial}{\partial\theta_0}J(\theta_0,\theta_1) \\<br>&amp; = \theta_0 - \alpha\frac{\partial}{\partial\theta_0} \frac{1}{2m} \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2 \\<br>&amp; = \theta_0 - (\alpha \frac{1}{2m} * 2 * \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})) * \frac{\partial}{\partial\theta_0}(h_\theta(x^{(i)}) - y^{(i)}) \\<br>&amp; = \theta_0 - \frac{\alpha}{m}  * \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})<br>\end{align}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://stackbox.cn/mathjax-support-demo/" data-id="cj9v59gts00004gzx30p7eusz" class="article-share-link" data-share="baidu" data-title="mathjax-support-demo">分享到</a>
+      
+
+      
+        <a href="http://stackbox.cn/mathjax-support-demo/#ds-thread" class="article-comment-link">评论</a>
+      
+
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+
+  <section id="comments">
+    <div id="ds-thread" class="ds-thread" data-thread-key="mathjax-support-demo/" data-title="mathjax-support-demo" data-url="http://stackbox.cn/mathjax-support-demo/"></div>
+  </section>
+</section>
+      
+      <aside id="sidebar">
+  
+    
+  
+    
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/mathjax-support-demo/">mathjax-support-demo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">友情链接</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://arvinxiang.com" target="_blank">主题作者</a>
+          </li>
+        
+          <li>
+            <a href="http://reqianduan.com" target="_blank">热前端</a>
+          </li>
+        
+          <li>
+            <a href="http://yuancheng.work" target="_blank">远程.work</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+      
+    </div>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 superalsrk<br>
+      Powered by <a href="//hexo.io/" target="_blank">Hexo</a>
+      .
+      Theme by <a href="https://github.com/xiangming/landscape-plus" target="_blank">Landscape-plus</a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+  <!-- totop start -->
+<div id="totop">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<!-- totop end -->
+
+<!-- 多说公共js代码 start -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"reqianduan"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共js代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<div id="article-share-box" class="article-share-box">
+  <div id="bdshare" class="bdsharebuttonbox article-share-links">
+    <a class="article-share-weibo" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a class="article-share-weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a class="article-share-qq" data-cmd="sqq" title="分享到QQ"></a>
+    <a class="article-share-renren" data-cmd="renren" title="分享到人人网"></a>
+    <a class="article-share-more" data-cmd="more" title="更多"></a>
+  </div>
+</div>
+<script>
+  function SetShareData(cmd, config) {
+    if (shareDataTitle && shareDataUrl) {
+      config.bdText = shareDataTitle;
+      config.bdUrl = shareDataUrl;
+    }
+    return config;
+  }
+  window._bd_share_config={
+    "common":{onBeforeClick: SetShareData},
+    "share":{"bdCustomStyle":"/css/bdshare.css"}
+  };
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+<!-- 百度分享 end -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+</div>
+</body>
+</html>
